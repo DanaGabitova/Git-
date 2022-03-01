@@ -20,9 +20,9 @@ class Circle(QWidget):
 
     def paintEvent(self, event):
         if self.flag:
-            size = random.randint(1, 150)
             qp = QPainter()
             for i in range(1, random.randint(3, 6)):
+                size = random.randint(1, 150)
                 qp.begin(self)
                 qp.setBrush(QColor(255, 255, 0))
                 qp.drawEllipse(random.randint(0, 150),
